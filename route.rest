@@ -1,0 +1,45 @@
+GET http://localhost:3001/users
+
+###
+
+POST http://localhost:3001/users/
+Content-Type: application/json
+
+{
+    "serial": "4",
+    "name": "tron",
+    "isManufacturer": "true"
+}
+
+###
+DELETE http://localhost:3001/users/62a68fe375dd27317b1daa89
+
+###
+
+GET http://localhost:3001/product
+
+###
+
+POST http://localhost:3001/product/
+Content-Type: application/json
+
+{
+    "serial": "2",
+    "name": "Alexatron",
+    "manufacturer": "Amazon",
+    "price": "2999",
+    "category": "Electronics",
+    "description": "Alexa is an Assistant",
+    "image": "https://images.unsplash.com/photo-1568910748155-01ca989dbdd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWxleGF8ZW58MHx8MHx8&w=1000&q=80",
+    "stock": "10"
+}
+
+###
+
+PATCH http://localhost:3001/product/62a6966ff37480194a6fdb0e
+Content-Type: application/json
+
+{
+    "name": "Alexa",
+    "manufacturer": "Amazonia",
+}
