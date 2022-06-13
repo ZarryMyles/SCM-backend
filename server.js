@@ -17,4 +17,10 @@ app.use('/users', usersRoute)
 const productRoute = require('./routes/product')
 app.use('/product', productRoute)
 
+const manufacturerRoute = require('./routes/manufacturer')
+app.use('/manufacturer', manufacturerRoute)
+
+const orderRoute = require('./routes/orders')
+app.use('/order', orderRoute)
+
 app.listen(3001, () => console.log('server started!'))
